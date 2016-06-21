@@ -9,7 +9,7 @@ var delayedFORLoop = function (array) {
 
         }).finally(function () {
           // Resolve or continue with loop
-            if (count === array.length) {
+            if (count === array.length - 1) {
                 defer.resolve();
             } else {
                 loop(++count);
